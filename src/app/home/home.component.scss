@@ -5,7 +5,7 @@
 .flip-card {
   background-color: transparent;
   width: 205px;
-  height: 255px;
+  height: 210px;
   border-radius: 10px;
   perspective: 1000px;
 }
@@ -21,8 +21,7 @@
 .flip-card-inner {
   position: relative;
   border-radius: 10px;
-  height: 255px;
-  min-height: 255px;
+  height: 210px;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
