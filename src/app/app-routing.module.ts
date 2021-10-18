@@ -11,6 +11,10 @@ const routes: Routes = [
     component: ServiceComponent,
   },
   {
+    path: '',
+    component: HomeComponent,
+  },
+  {
     path: 'home',
     component: HomeComponent,
   },
