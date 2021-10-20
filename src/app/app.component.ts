@@ -11,8 +11,8 @@ export class AppComponent {
   direction: Direction = 'rtl';
   constructor(public translate: TranslateService) {
     translate.addLangs(['ar', 'en', 'fr']);
-    translate.setDefaultLang('ar');
-    // this.direction = 'ltr';
+    translate.setDefaultLang('fr');
+    this.direction = 'ltr';
   }
   switchLang(lang: string) {
     if (lang === 'ar') this.direction = 'rtl';

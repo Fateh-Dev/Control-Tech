@@ -33,8 +33,7 @@
       max-width: 70vw;
       font-weight: bold;
     "
-  >
-    نقدم خدماتنا الاستشارية وفقًا للمعايير الدولية
+    >{{ "homeText" | translate }}
   </span>
 </div>
 
@@ -70,7 +69,7 @@
         <div class="enlarge-card-back" [routerLink]="['./consultation']">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              خدمات استشارية
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>
@@ -86,7 +85,7 @@
         <div class="enlarge-card-back">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              دراسة و اعداد مشاريع الاستثمار
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>
@@ -102,7 +101,7 @@
         <div class="enlarge-card-back">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              كراء معدات الأشغال العمومية
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>
@@ -118,7 +117,7 @@
         <div class="enlarge-card-back">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              دراسة في الميدان الفلاحي
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>
@@ -160,7 +159,6 @@
       box-shadow: 0px 0px 5px rgb(207, 207, 207);
       border-radius: 10px;
     "
-    dir="rtl"
   >
     <mat-toolbar
       color="primary"
@@ -171,8 +169,9 @@
         flex: 1 1 auto;
         text-align: center !important;
       "
-      >اتصل بنــــا</mat-toolbar
     >
+      {{ "contact" | translate }}
+    </mat-toolbar>
     <div
       fxLayout="column"
       fxFlex="50"
@@ -191,22 +190,21 @@
         box-shadow: 0px 0px 5px rgb(207, 207, 207);
         border-radius: 10px;
       "
-      dir="rtl"
     >
       <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
-        <mat-label>الإسم الكامل </mat-label>
+        <mat-label>{{ "fullname" | translate }} </mat-label>
         <input matInput placeholder="   " value="" />
       </mat-form-field>
       <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
-        <mat-label>البريد الالكتروني </mat-label>
+        <mat-label>{{ "email" | translate }} </mat-label>
         <input matInput placeholder="  " value="" />
       </mat-form-field>
       <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
-        <mat-label>الموضوع</mat-label>
+        <mat-label>{{ "subject" | translate }} </mat-label>
         <input matInput placeholder=" " value="" />
       </mat-form-field>
       <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
-        <mat-label>الرسالة</mat-label>
+        <mat-label>{{ "msg" | translate }} </mat-label>
         <textarea matInput rows="6" placeholder="  " value=""></textarea>
       </mat-form-field>
       <button
@@ -214,7 +212,7 @@
         style="background-color: #fed03d; padding: 5px 30px 5px 30px"
         color="primary"
       >
-        ارســــــال
+        {{ "send" | translate }}
       </button>
     </div>
   </div>

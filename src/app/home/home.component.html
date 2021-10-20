@@ -90,10 +90,7 @@
     background-color: #fed03d;
   "
 >
-  <span>
-    تسعى المؤسسة لتقديم خدماتها الإستشارية بمعايير عالمية وخبرات وطنية ومهنية
-    عالية في المجالات الإقتصادية والإدارية</span
-  >
+  <span> {{ "homeSubTexte" | translate }} </span>
   <div fxLayout="row" fxLayoutAlign="center center">
     <button
       mat-raised-button
@@ -127,14 +124,13 @@
     background-color: #ffffff;
   "
 >
-  <span> مؤسسة الأعمال الإدارية والتجارية</span>
+  <span> {{ "homeTitle" | translate }}</span>
   <hr
     style="width: 300px; height: 3px; background-color: #fed03d; border: none"
   />
   <span style="font-size: 18px; padding: 20px">
-    نحن نفخر في قدرتنا على التعامل مع كل مهمة على حدة، من الناحية الموضوعية، ومع
-    الالتزام الكامل</span
-  >
+    {{ "homeSubTexte" | translate }}
+  </span>
   <div
     fxLayout="row"
     fxLayoutAlign="space-around center"
@@ -152,7 +148,7 @@
             <div fxFlex>
               <h1
                 style="
-                  font-size: 40px;
+                  font-size: 30px;
                   font-weight: bold;
                   font-family: cairo, Arial, Helvetica, sans-serif;
                   margin: 40px;
@@ -166,13 +162,10 @@
         <div class="flip-card-back">
           <div style="padding: 20px 10px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              رؤيتنا
+              {{ "vision" | translate }}
             </h1>
             <p style="font-size: 12px">
-              تعزيز الأنشطة الاقتصادية، وتوجيه برامج الاستثمار، وبناء وتعزيز
-              العلاقات المتبادلة بين المنظمات العاملة في نفس الأعمال. التميز في
-              أدائنا المهني وتقييمه باستمرار. نتوصل إلى أفضل الحلول من خلال
-              التعاون و التتواصل بيننا وبين عملائنا
+              {{ "visionText" | translate }}
             </p>
           </div>
         </div>
@@ -188,13 +181,13 @@
             <div fxFlex>
               <h1
                 style="
-                  font-size: 40px;
+                  font-size: 30px;
                   font-weight: bold;
                   font-family: cairo, Arial, Helvetica, sans-serif;
                   margin: 40px;
                 "
               >
-                الرسالة
+                {{ "lettre" | translate }}
               </h1>
             </div>
           </div>
@@ -202,14 +195,11 @@
         <div class="flip-card-back">
           <div style="padding: 20px 10px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              {{ "objectif" | translate }}
+              {{ "lettre" | translate }}
             </h1>
 
             <p style="font-size: 12px">
-              خدمات استشارية شاملة ومتطورة في جميع المجالات الاقتصادية والإدارية
-              لمجتمع المال والأعمال الجزائري للشركات والمؤسسات بالقطاع الحكومي
-              والخاص والمستثمرين من رجال الأعمال، والمساعدة على اتخاذ القرار
-              المناسب على أساس علمي مدروس
+              {{ "lettreText" | translate }}
             </p>
           </div>
         </div>
@@ -225,7 +215,7 @@
             <div fxFlex>
               <h1
                 style="
-                  font-size: 40px;
+                  font-size: 30px;
                   font-weight: bold;
                   font-family: cairo, Arial, Helvetica, sans-serif;
                   margin: 40px;
@@ -243,10 +233,7 @@
             </h1>
 
             <p style="font-size: 12px">
-              تقديم أفضل الخدمات المهنية لعملائنا والاستشارات والحلول لمعالجة كل
-              المشاكل التي تواجههم في أعمالهم. تقديم الخدمات الاستشارية
-              للمستثمرين (الشركات / المؤسسات والأفراد) في مختلف الأنشطة
-              الاقتصادية على المستوى المحلي والعالمي.
+              {{ "objectifText" | translate }}
             </p>
           </div>
         </div>
@@ -274,7 +261,7 @@
     style="width: 300px; height: 3px; background-color: #fed03d; border: none"
   />
   <span style="font-size: 28px; padding: 20px">
-    نقدم خدماتنا الاستشارية وفقًا للمعايير الدولية
+    {{ "homeSubTexte" | translate }}
   </span>
   <div
     fxLayout="row"
@@ -287,13 +274,17 @@
     <div
       fxFlex
       class="enlarge-card"
-      style="background-image: url('assets/agreement.jpg')"
+      style="
+        background-image: url('assets/thumbnail.png');
+        background-size: cover;
+        background-position: center;
+      "
     >
       <div class="enlarge-card-inner">
         <div class="enlarge-card-back">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              خدمات استشارية
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>
@@ -302,13 +293,17 @@
     <div
       fxFlex
       class="enlarge-card"
-      style="background-image: url('assets/agreement.jpg')"
+      style="
+        background-image: url('assets/thumbnail.png');
+        background-size: cover;
+        background-position: center;
+      "
     >
       <div class="enlarge-card-inner">
         <div class="enlarge-card-back">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              دراسة و اعداد مشاريع الاستثمار
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>
@@ -317,13 +312,17 @@
     <div
       fxFlex
       class="enlarge-card"
-      style="background-image: url('assets/agreement.jpg')"
+      style="
+        background-image: url('assets/thumbnail.png');
+        background-size: cover;
+        background-position: center;
+      "
     >
       <div class="enlarge-card-inner">
         <div class="enlarge-card-back">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              كراء معدات الأشغال العمومية
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>
@@ -332,13 +331,17 @@
     <div
       fxFlex
       class="enlarge-card"
-      style="background-image: url('assets/agri.jpg'); background-size: cover"
+      style="
+        background-image: url('assets/thumbnail.png');
+        background-size: cover;
+        background-position: center;
+      "
     >
       <div class="enlarge-card-inner">
         <div class="enlarge-card-back">
           <div style="padding: 20px 50px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              دراسة في الميدان الفلاحي
+              {{ "lettre" | translate }}
             </h1>
           </div>
         </div>

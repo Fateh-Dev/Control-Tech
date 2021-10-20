@@ -20,7 +20,7 @@
       padding: 50px;
       font-weight: bold;
     "
-    ><strong> اتصل بنا </strong>
+    ><strong> {{ "contact" | translate }} </strong>
   </span>
   <span
     style="
@@ -33,8 +33,7 @@
       max-width: 70vw;
       font-weight: bold;
     "
-  >
-    نحرص دائما على الرد على جميع من يخاطبنا و يتواصل معنا
+    >{{ "homeText" | translate }}
   </span>
 </div>
 
@@ -53,12 +52,12 @@
     background-color: whitesmoke;
   "
 >
-  <span> اتصل بنا </span>
+  <span> {{ "contact" | translate }} </span>
   <hr
     style="width: 100px; height: 3px; background-color: #fed03d; border: none"
   />
   <div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
-    <div fxFlex="30">DG: Karim T</div>
+    <div fxFlex="30">{{ "lettre" | translate }}</div>
     <span
       fxFlex="70"
       fxLayout="row"
@@ -93,7 +92,6 @@
           font-style: normal;
           font-size: 32px;
         "
-        dir="rtl"
       >
         <div
           fxLayout="column"
@@ -112,14 +110,13 @@
             box-shadow: 0px 0px 5px rgb(207, 207, 207);
             border-radius: 10px;
           "
-          dir="rtl"
         >
           <mat-form-field
             appearance="outline"
             fxFlexFill
             style="font-size: 14px"
           >
-            <mat-label>الإسم الكامل </mat-label>
+            <mat-label>{{ "fullname" | translate }} </mat-label>
             <input matInput placeholder="   " value="" />
           </mat-form-field>
           <mat-form-field
@@ -127,7 +124,7 @@
             fxFlexFill
             style="font-size: 14px"
           >
-            <mat-label>البريد الالكتروني </mat-label>
+            <mat-label>{{ "email" | translate }} </mat-label>
             <input matInput placeholder="  " value="" />
           </mat-form-field>
           <mat-form-field
@@ -135,7 +132,7 @@
             fxFlexFill
             style="font-size: 14px"
           >
-            <mat-label>الموضوع</mat-label>
+            <mat-label>{{ "subject" | translate }} </mat-label>
             <input matInput placeholder=" " value="" />
           </mat-form-field>
           <mat-form-field
@@ -143,7 +140,7 @@
             fxFlexFill
             style="font-size: 14px"
           >
-            <mat-label>الرسالة</mat-label>
+            <mat-label>{{ "msg" | translate }} </mat-label>
             <textarea matInput rows="6" placeholder="  " value=""></textarea>
           </mat-form-field>
           <button
@@ -151,7 +148,7 @@
             style="background-color: #fed03d; padding: 5px 30px 5px 30px"
             color="primary"
           >
-            ارســــــال
+            {{ "send" | translate }}
           </button>
         </div>
       </div>
