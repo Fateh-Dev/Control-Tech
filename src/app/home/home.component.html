@@ -13,14 +13,14 @@
 >
   <span
     style="
-      font-size: 60px;
+      font-size: 5vw;
       font-family: cairo, Arial, Helvetica, sans-serif;
       color: beige;
       text-shadow: 1px 1px 1px black;
       padding: 50px;
       font-weight: bold;
     "
-    ><strong> كونترول تكنولوجي و ماناجمنت</strong>
+    ><strong> {{ "homeTitle" | translate }} </strong>
   </span>
   <span
     style="
@@ -33,9 +33,7 @@
       max-width: 70vw;
       font-weight: bold;
     "
-    >تعد الوساطة التجارية اليوم واحدة من بين ابرز الوسائل البديلة المعتمدة لحل
-    النزاعات والخلافات ، وهي سنة بعد سنة، تتخذ لها مكانا هاما في المبادلات
-    التجارية والعلاقات
+    >{{ "homeText" | translate }}
   </span>
   <span fxLayout="row">
     <div
@@ -58,7 +56,7 @@
         "
         [routerLink]="['/contact']"
       >
-        اتصل بنا
+        {{ "contact" | translate }}
       </button>
       <button
         mat-raised-button
@@ -72,7 +70,7 @@
         "
         [routerLink]="['/service']"
       >
-        خدماتنا
+        {{ "service" | translate }}
       </button>
     </div>
   </span>
@@ -108,8 +106,9 @@
         position: relative;
         bottom: -30px;
       "
+      [routerLink]="['/contact']"
     >
-      اتصل بنا
+      {{ "contact" | translate }}
     </button>
   </div>
 </div>
@@ -159,7 +158,7 @@
                   margin: 40px;
                 "
               >
-                رؤيتنا
+                {{ "vision" | translate }}
               </h1>
             </div>
           </div>
@@ -203,7 +202,7 @@
         <div class="flip-card-back">
           <div style="padding: 20px 10px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              الرسالة
+              {{ "objectif" | translate }}
             </h1>
 
             <p style="font-size: 12px">
@@ -232,7 +231,7 @@
                   margin: 40px;
                 "
               >
-                الأهداف
+                {{ "objectif" | translate }}
               </h1>
             </div>
           </div>
@@ -240,7 +239,7 @@
         <div class="flip-card-back">
           <div style="padding: 20px 10px">
             <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
-              الأهداف
+              {{ "objectif" | translate }}
             </h1>
 
             <p style="font-size: 12px">
@@ -270,7 +269,7 @@
     background-color: #ffffff;
   "
 >
-  <span> خـدمـاتـنـا</span>
+  <span> {{ "service" | translate }}</span>
   <hr
     style="width: 300px; height: 3px; background-color: #fed03d; border: none"
   />

@@ -1,32 +1,32 @@
 <mat-toolbar
+  [dir]="direction"
   [class.mat-elevation-z2]="true"
   style="
     background-color: white;
     position: sticky;
     top: 0;
-    z-index: 100;
-    min-height: 100px;
+    z-index: 1000;
+    min-height: 60px;
   "
   fxLayout="row"
   fxLayoutAlign="space-around center"
-  ><span><img src="assets/logo.png" width="80" height="80" /></span>
+  class="stiky"
+  ><span
+    ><img
+      src="assets/logo.png"
+      width="50"
+      height="50"
+      [routerLink]="['/home']"
+      style="cursor: pointer"
+  /></span>
   <span class="example-spacer"></span>
-
   <span
     mat-flat-button
     class="menu-item"
-    [routerLink]="['/service']"
+    [routerLink]="['/home']"
     routerLinkActive="active-route"
   >
-    خدماتنا
-  </span>
-  <span
-    mat-flat-button
-    class="menu-item"
-    [routerLink]="['/contact']"
-    routerLinkActive="active-route"
-  >
-    اتصل بنا
+    {{ "home" | translate }}
   </span>
   <span
     mat-flat-button
@@ -34,19 +34,67 @@
     [routerLink]="['/info']"
     routerLinkActive="active-route"
   >
-    لمحة عنا
+    {{ "about" | translate }} </span
+  ><span
+    mat-flat-button
+    class="menu-item"
+    [routerLink]="['/contact']"
+    routerLinkActive="active-route"
+  >
+    {{ "contact" | translate }}
   </span>
   <span
     mat-flat-button
     class="menu-item"
-    [routerLink]="['/home']"
+    [routerLink]="['/service']"
     routerLinkActive="active-route"
   >
-    الرئيــسية
+    {{ "service" | translate }}
   </span>
-  <span class="example-spacer"></span
-></mat-toolbar>
-<div fxLayout="row" fxLayoutAlign="space-around start">
+
+  <span class="example-spacer"></span>
+  <!-- <select
+    class="form-control"
+    #selectedLang
+    (change)="switchLang(selectedLang.value)"
+  >
+    <option
+      *ngFor="let language of translate.getLangs()"
+      [value]="language"
+      [selected]="language === translate.currentLang"
+    >
+      {{ language }}
+    </option>
+  </select> -->
+  <button
+    mat-flat-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon style="color: #fed03d"> translate</mat-icon
+    ><span
+      style="
+        padding: 5px;
+        font-weight: bold;
+        font-family: Changa, Arial, Helvetica, sans-serif;
+        color: #fed03d;
+      "
+      >{{ "languages" | translate }}</span
+    >
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="switchLang('fr')">
+      <span>Français</span>
+    </button>
+    <button mat-menu-item (click)="switchLang('ar')">
+      <span>العربية</span>
+    </button>
+    <button mat-menu-item (click)="switchLang('en')">
+      <span>English</span>
+    </button>
+  </mat-menu></mat-toolbar
+>
+<div fxLayout="row" fxLayoutAlign="space-around start" [dir]="direction">
   <div fxFlex="100">
     <router-outlet></router-outlet>
   </div>

@@ -1,1 +1,221 @@
-<p>service works!</p>
+<div
+  fxLayout="column"
+  style="
+    min-height: 80vh;
+    background-color: beige;
+    background-image: url('assets/agreement.jpg');
+    background-size: cover;
+    align-items: center;
+    vertical-align: middle;
+  "
+  fxLayoutAlign="center center"
+  fxLayoutGap="60px"
+>
+  <span
+    style="
+      font-size: 5vw;
+      font-family: cairo, Arial, Helvetica, sans-serif;
+      color: beige;
+      text-shadow: 1px 1px 1px black;
+      padding: 50px;
+      font-weight: bold;
+    "
+    ><strong> {{ "service" | translate }} </strong>
+  </span>
+  <span
+    style="
+      font-size: 24px;
+      font-family: 'cairo', Arial, Helvetica, sans-serif;
+      color: #fed03d;
+      text-align: center;
+      line-height: 40px;
+      text-shadow: 1px 1px 1px black;
+      max-width: 70vw;
+      font-weight: bold;
+    "
+  >
+    نقدم خدماتنا الاستشارية وفقًا للمعايير الدولية
+  </span>
+</div>
+
+<div
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  style="
+    padding: 50px 70px 50px 70px;
+    font-family: Cairo, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.31;
+    letter-spacing: 0px;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+    background-color: #ffffff;
+  "
+>
+  <div
+    fxLayout="row"
+    fxLayout.lt-lg="column"
+    fxLayoutAlign="space-around center"
+    fxLayoutGap="40px"
+    fxFlexFill
+    style="padding: 0px 50px"
+  >
+    <div
+      fxFlex
+      class="enlarge-card"
+      style="background-image: url('assets/agreement.jpg')"
+    >
+      <div class="enlarge-card-inner">
+        <div class="enlarge-card-back" [routerLink]="['./consultation']">
+          <div style="padding: 20px 50px">
+            <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
+              خدمات استشارية
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      [routerLink]="['./etude-invest']"
+      fxFlex
+      class="enlarge-card"
+      style="background-image: url('assets/agreement.jpg')"
+    >
+      <div class="enlarge-card-inner">
+        <div class="enlarge-card-back">
+          <div style="padding: 20px 50px">
+            <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
+              دراسة و اعداد مشاريع الاستثمار
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      [routerLink]="['./location-materiel']"
+      fxFlex
+      class="enlarge-card"
+      style="background-image: url('assets/agreement.jpg')"
+    >
+      <div class="enlarge-card-inner">
+        <div class="enlarge-card-back">
+          <div style="padding: 20px 50px">
+            <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
+              كراء معدات الأشغال العمومية
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      [routerLink]="['./etude-agricol']"
+      fxFlex
+      class="enlarge-card"
+      style="background-image: url('assets/agri.jpg'); background-size: cover"
+    >
+      <div class="enlarge-card-inner">
+        <div class="enlarge-card-back">
+          <div style="padding: 20px 50px">
+            <h1 style="font-family: cairo, Arial, Helvetica, sans-serif">
+              دراسة في الميدان الفلاحي
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  style="
+    padding: 70px;
+    font-family: Cairo, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.31;
+    letter-spacing: 0px;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+    background-color: whitesmoke;
+  "
+>
+  <div
+    fxLayout="column"
+    fxFlex="50"
+    fxFlexFill
+    fxLayoutAlign="center center"
+    style="
+      padding: 0px;
+      font-family: Cairo, Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: 1.31;
+      letter-spacing: 0px;
+      font-style: normal;
+      font-size: 32px;
+      text-align: center;
+      background-color: white;
+      box-shadow: 0px 0px 5px rgb(207, 207, 207);
+      border-radius: 10px;
+    "
+    dir="rtl"
+  >
+    <mat-toolbar
+      color="primary"
+      style="
+        border-radius: 10px 10px 0 0;
+        background-color: #fed03d;
+        height: 80px;
+        flex: 1 1 auto;
+        text-align: center !important;
+      "
+      >اتصل بنــــا</mat-toolbar
+    >
+    <div
+      fxLayout="column"
+      fxFlex="50"
+      fxFlexFill
+      fxLayoutAlign="center end"
+      style="
+        padding: 70px;
+        font-family: Cairo, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: 1.31;
+        letter-spacing: 0px;
+        font-style: normal;
+        font-size: 32px;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px rgb(207, 207, 207);
+        border-radius: 10px;
+      "
+      dir="rtl"
+    >
+      <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
+        <mat-label>الإسم الكامل </mat-label>
+        <input matInput placeholder="   " value="" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
+        <mat-label>البريد الالكتروني </mat-label>
+        <input matInput placeholder="  " value="" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
+        <mat-label>الموضوع</mat-label>
+        <input matInput placeholder=" " value="" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" fxFlexFill style="font-size: 14px">
+        <mat-label>الرسالة</mat-label>
+        <textarea matInput rows="6" placeholder="  " value=""></textarea>
+      </mat-form-field>
+      <button
+        mat-flat-button
+        style="background-color: #fed03d; padding: 5px 30px 5px 30px"
+        color="primary"
+      >
+        ارســــــال
+      </button>
+    </div>
+  </div>
+</div>
