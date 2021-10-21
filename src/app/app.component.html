@@ -1,59 +1,60 @@
-<mat-toolbar
-  [dir]="direction"
-  [class.mat-elevation-z2]="true"
-  style="
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    min-height: 60px;
-  "
-  fxLayout="row"
-  fxLayoutAlign="space-around center"
-  class="stiky"
-  ><span
-    ><img
-      src="assets/logo.png"
-      width="50"
-      height="50"
+<div class="container">
+  <mat-toolbar
+    [dir]="direction"
+    [class.mat-elevation-z2]="true"
+    style="
+      background-color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      min-height: 60px;
+    "
+    fxLayout="row"
+    fxLayoutAlign="space-around center"
+    class="stiky"
+    ><span
+      ><img
+        src="assets/logo.png"
+        width="50"
+        height="50"
+        [routerLink]="['/home']"
+        style="cursor: pointer"
+    /></span>
+    <span class="example-spacer"></span>
+    <span
+      mat-flat-button
+      class="menu-item"
       [routerLink]="['/home']"
-      style="cursor: pointer"
-  /></span>
-  <span class="example-spacer"></span>
-  <span
-    mat-flat-button
-    class="menu-item"
-    [routerLink]="['/home']"
-    routerLinkActive="active-route"
-  >
-    {{ "home" | translate }}
-  </span>
-  <span
-    mat-flat-button
-    class="menu-item"
-    [routerLink]="['/info']"
-    routerLinkActive="active-route"
-  >
-    {{ "about" | translate }} </span
-  ><span
-    mat-flat-button
-    class="menu-item"
-    [routerLink]="['/contact']"
-    routerLinkActive="active-route"
-  >
-    {{ "contact" | translate }}
-  </span>
-  <span
-    mat-flat-button
-    class="menu-item"
-    [routerLink]="['/service']"
-    routerLinkActive="active-route"
-  >
-    {{ "service" | translate }}
-  </span>
+      routerLinkActive="active-route"
+    >
+      {{ "home" | translate }}
+    </span>
+    <span
+      mat-flat-button
+      class="menu-item"
+      [routerLink]="['/info']"
+      routerLinkActive="active-route"
+    >
+      {{ "about" | translate }} </span
+    ><span
+      mat-flat-button
+      class="menu-item"
+      [routerLink]="['/contact']"
+      routerLinkActive="active-route"
+    >
+      {{ "contact" | translate }}
+    </span>
+    <span
+      mat-flat-button
+      class="menu-item"
+      [routerLink]="['/service']"
+      routerLinkActive="active-route"
+    >
+      {{ "service" | translate }}
+    </span>
 
-  <span class="example-spacer"></span>
-  <!-- <select
+    <span class="example-spacer"></span>
+    <!-- <select
     class="form-control"
     #selectedLang
     (change)="switchLang(selectedLang.value)"
@@ -66,52 +67,58 @@
       {{ language }}
     </option>
   </select> -->
-  <button
-    mat-flat-button
-    [matMenuTriggerFor]="menu"
-    aria-label="Example icon-button with a menu"
-  >
-    <mat-icon style="color: #fed03d"> translate</mat-icon
-    ><span
-      style="
-        padding: 5px;
-        font-weight: bold;
-        font-family: Changa, Arial, Helvetica, sans-serif;
-        color: #fed03d;
-      "
-      >{{ "languages" | translate }}</span
+    <button
+      mat-flat-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
     >
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="switchLang('fr')">
-      <span>Français</span>
+      <mat-icon style="color: #fed03d"> translate</mat-icon
+      ><span
+        style="
+          padding: 5px;
+          font-weight: bold;
+          font-family: Changa, Arial, Helvetica, sans-serif;
+          color: #fed03d;
+        "
+        >{{ "languages" | translate }}</span
+      >
     </button>
-    <button mat-menu-item (click)="switchLang('ar')">
-      <span>العربية</span>
-    </button>
-    <button mat-menu-item (click)="switchLang('en')">
-      <span>English</span>
-    </button>
-  </mat-menu></mat-toolbar
->
-<div fxLayout="row" fxLayoutAlign="space-around start" [dir]="direction">
-  <div fxFlex="100">
-    <router-outlet></router-outlet>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="switchLang('fr')">
+        <span>Français</span>
+      </button>
+      <button mat-menu-item (click)="switchLang('ar')">
+        <span>العربية</span>
+      </button>
+      <button mat-menu-item (click)="switchLang('en')">
+        <span>English</span>
+      </button>
+    </mat-menu></mat-toolbar
+  >
+  <div
+    fxLayout="row"
+    fxLayoutAlign="space-around start"
+    [dir]="direction"
+    style="flex: 1 0 auto"
+  >
+    <div fxFlex="100">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-</div>
-<div
-  fxLayout="row"
-  fxLayoutAlign="space-around start"
-  dir="ltr"
-  style="height: 250px; background-color: rgb(51, 51, 51)"
->
-  <div fxFlex="100"></div>
-</div>
-<div
-  fxLayout="row"
-  fxLayoutAlign="space-around start"
-  dir="ltr"
-  style="height: 60px; background-color: black"
->
-  <div fxFlex="100"></div>
+  <div
+    fxLayout="row"
+    fxLayoutAlign="space-around start"
+    dir="ltr"
+    style="height: 250px; background-color: rgb(51, 51, 51); flex-shrink: 0"
+  >
+    <div fxFlex="100"></div>
+  </div>
+  <div
+    fxLayout="row"
+    fxLayoutAlign="space-around start"
+    dir="ltr"
+    style="height: 60px; background-color: black; flex-shrink: 0"
+  >
+    <div fxFlex="100"></div>
+  </div>
 </div>

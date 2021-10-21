@@ -1,0 +1,33 @@
+{
+  "Sitetitle": "Lorem ipsum dolor sit amet",
+  "service": "Our Services",
+  "contact": "Contact Us  ",
+  "about": "About US",
+  "home": "Home",
+
+  "aboutTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  ",
+  "homeTitle": " Lorem ipsum dolor sit amet ",
+  "homeSubTexte": " Lorem ipsum dolor sit amet psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u",
+  "homeSubTitle": " Lorem ipsum dolor sit amet ",
+  "homeSubTitleTexte": " Lorem ipsum dolor sit amet  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor ",
+
+  "aboutText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+  "seviceText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . ",
+  "homeText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ea commodo consequat. ",
+  "contactText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam . ",
+  "objectif": "Lorem ipsum",
+  "objectifText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adi snt ut labore et dolore magna aliqua. Ut enim ad minim veniam .",
+
+  "languages": "languages",
+  "fullname": "Fullname",
+  "email": "E-mail",
+  "subject": "Subject",
+  "msg": "Message",
+  "send": "Send",
+
+  "vision": "Lorem ipsum",
+  "visionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adi snt ut labore et dolore magna aliqua. Ut enim ad minim veniam .",
+
+  "lettre": "Lorem ipsum",
+  "lettreText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adi snt ut labore et dolore magna aliqua. Ut enim ad minim veniam ."
+}
